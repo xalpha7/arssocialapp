@@ -1,0 +1,260 @@
+{
+  "modules": [
+    {
+      "id": "community-feed",
+      "title": "Community Feed",
+      "subtitle": "Posts, reactions, comments and discovery",
+      "icon": "feed",
+      "enabled": true,
+      "subFeatures": [
+        {"id": "create-post", "title": "Create posts", "enabled": true},
+        {"id": "reactions", "title": "Likes and reactions", "enabled": true},
+        {"id": "comments", "title": "Comments and replies", "enabled": true},
+        {"id": "post-sharing", "title": "Share posts", "enabled": true},
+        {"id": "feed-filters", "title": "Trending, For You and Following", "enabled": true}
+      ]
+    },
+    {
+      "id": "stories",
+      "title": "Stories",
+      "subtitle": "Share short-lived photos and updates",
+      "icon": "stories",
+      "enabled": true,
+      "subFeatures": [
+        {"id": "add-story", "title": "Add a story", "enabled": true},
+        {"id": "story-viewers", "title": "Story viewers", "enabled": true}
+      ]
+    },
+    {
+      "id": "find-partner",
+      "title": "Find a Partner",
+      "subtitle": "Meet people for activities and adventures",
+      "icon": "partner",
+      "enabled": true,
+      "subFeatures": [
+        {"id": "create-event", "title": "Create an event", "enabled": true},
+        {"id": "partner-requests", "title": "Browse and join partner events", "enabled": true}
+      ]
+    },
+    {
+      "id": "guild",
+      "title": "Guild",
+      "subtitle": "Guild membership, rankings and challenges",
+      "icon": "guild",
+      "enabled": true,
+      "subFeatures": [
+        {"id": "guild-members", "title": "Guild members", "enabled": true},
+        {"id": "guild-challenges", "title": "Guild challenges", "enabled": true},
+        {"id": "guild-leaderboard", "title": "Guild leaderboard", "enabled": true}
+      ]
+    },
+    {
+      "id": "social-clubs",
+      "title": "Social Clubs",
+      "subtitle": "Interest-based groups, events and meetups",
+      "icon": "clubs",
+      "enabled": true,
+      "subFeatures": [
+        {"id": "club-discovery", "title": "Discover clubs", "enabled": true},
+        {"id": "club-events", "title": "Club events", "enabled": true}
+      ]
+    },
+    {
+      "id": "earn-points",
+      "title": "Earn Points",
+      "subtitle": "Points, rewards and achievement challenges",
+      "icon": "points",
+      "enabled": true,
+      "subFeatures": [
+        {"id": "points-wallet", "title": "Points wallet", "enabled": true},
+        {"id": "rewards", "title": "Rewards", "enabled": true}
+      ]
+    },
+    {
+      "id": "profile",
+      "title": "Profile",
+      "subtitle": "Personal profile, activity and preferences",
+      "icon": "profile",
+      "enabled": true,
+      "subFeatures": [
+        {"id": "profile-details", "title": "Profile details", "enabled": true},
+        {"id": "privacy", "title": "Privacy settings", "enabled": true}
+      ]
+    }
+  ],
+  "socialClubCategories": [
+    "Music",
+    "Reading",
+    "Gaming",
+    "Trek & Travel",
+    "Photography",
+    "Events",
+    "Other"
+  ],
+  "dashboard": {
+    "userName": "Arjun",
+    "userAvatar": "",
+    "stories": [
+      {"name": "Priya Das", "initials": "PD", "color": 4294942383},
+      {"name": "Rohan Mehta", "initials": "RM", "color": 4289029691},
+      {"name": "Ananya Roy", "initials": "AR", "color": 4293524211},
+      {"name": "Sourav Sen", "initials": "SS", "color": 4285691087},
+      {"name": "Neha Kapoor", "initials": "NK", "color": 4291601107}
+    ],
+    "featuredPost": {
+      "author": "Arjun Sen",
+      "initials": "AS",
+      "guild": "Shadow Wolves",
+      "time": "3h ago",
+      "caption": "Just completed the Sandakphu trek! One of the most beautiful and challenging experiences so far. Highly recommend for all trek lovers here! 💜",
+      "tags": ["Travel Club", "Adventure Club", "Photography Club"],
+      "likes": 352,
+      "comments": 47,
+      "shares": 18
+    },
+    "guild": {
+      "name": "Shadow Wolves",
+      "id": "G-8F72D4",
+      "rank": "Gold V",
+      "members": 48,
+      "capacity": 50
+    },
+    "events": [
+      {"title": "Weddy Guild Challenge", "date": "Sat, 08 Nov · 6:00 PM", "icon": "trophy", "status": "Starting soon"},
+      {"title": "Guitar Club Jam Session", "date": "Sun, 09 Nov · 5:00 PM", "icon": "music", "status": "Upcoming"}
+    ],
+    "trendingTopics": ["Kolkata Book Fair", "Winter Treks", "Inter-Guild Cup"],
+    "recommendations": [
+      {"title": "Chess Club", "subtitle": "Strategy, games and discussions for chess enthusiasts.", "kind": "club", "initials": "♟"},
+      {"title": "Sandakphu Trek", "subtitle": "Nov 15 – Nov 18 · Trek & Travel", "kind": "event", "initials": "ST"}
+    ]
+  },
+  "findPartner": {
+    "visibilityOptions": {
+      "Gender": ["Any gender", "Women", "Men", "Non-binary"],
+      "Age": ["Any age", "18–24", "25–34", "35–44", "45+"],
+      "Location": ["Anywhere", "Within 5 km", "Within 25 km", "Same city"],
+      "Experience": ["Any level", "Beginner-friendly", "Experienced"]
+    },
+    "requests": [
+      {
+        "id": "partner-1",
+        "title": "Sandakphu Trek – Looking for 3 Partners",
+        "description": "Planning a four-day Sandakphu trek. Experienced or semi-experienced trekkers are welcome.",
+        "category": "Trek & Travel",
+        "creator": "Priya Das",
+        "initials": "PD",
+        "location": "Sandakphu",
+        "date": "Nov 15 – Nov 18",
+        "activityType": "Meetup",
+        "requirements": ["Comfortable with long hikes", "Bring your own trekking shoes"],
+        "visibility": ["Any gender", "18–34", "Experienced"],
+        "participantsNeeded": 3,
+        "totalParticipants": 5,
+        "costPerPerson": 6000,
+        "isPaid": true
+      },
+      {
+        "id": "partner-2",
+        "title": "Gaming Squad (PC) – Need 2 Players",
+        "description": "Looking for friendly teammates for regular co-op and strategy games.",
+        "category": "Gaming",
+        "creator": "Rohan Mehta",
+        "initials": "RM",
+        "location": "Online",
+        "date": "This weekend",
+        "activityType": "Online",
+        "requirements": ["PC and stable internet", "Voice chat preferred"],
+        "visibility": ["Any gender", "18–34", "Anywhere"],
+        "participantsNeeded": 2,
+        "totalParticipants": 5,
+        "costPerPerson": 0,
+        "isPaid": false
+      },
+      {
+        "id": "partner-3",
+        "title": "Book Discussion Group – New Members Welcome",
+        "description": "Join our relaxed weekly book discussion. This month we are reading contemporary fiction.",
+        "category": "Reading",
+        "creator": "Ananya Roy",
+        "initials": "AR",
+        "location": "Kolkata",
+        "date": "Every Sunday",
+        "activityType": "Meetup",
+        "requirements": ["Bring the current book or an e-reader"],
+        "visibility": ["Any gender", "Any age", "Same city"],
+        "participantsNeeded": 4,
+        "totalParticipants": 10,
+        "costPerPerson": 0,
+        "isPaid": false
+      },
+      {
+        "id": "partner-4",
+        "title": "Photography Walk – Victoria Memorial",
+        "description": "A relaxed photo walk to practice composition and share tips.",
+        "category": "Photography",
+        "creator": "Sourav Sen",
+        "initials": "SS",
+        "location": "Kolkata",
+        "date": "Nov 12",
+        "activityType": "Meetup",
+        "requirements": ["Bring a camera or phone"],
+        "visibility": ["Any gender", "18–44", "Same city"],
+        "participantsNeeded": 4,
+        "totalParticipants": 8,
+        "costPerPerson": 0,
+        "isPaid": false
+      }
+    ],
+    "people": [
+      {
+        "name": "Aditi Sharma",
+        "initials": "AS",
+        "location": "Kolkata",
+        "level": 5,
+        "bio": "Travel enthusiast and photography lover. Always up for new places and stories.",
+        "interests": ["Travel", "Photography"]
+      },
+      {
+        "name": "Rahul Sen",
+        "initials": "RS",
+        "location": "Kolkata",
+        "level": 4,
+        "bio": "Gaming and tech enthusiast. Love multiplayer games and discovering new tech.",
+        "interests": ["Gaming", "Music"]
+      },
+      {
+        "name": "Meera Das",
+        "initials": "MD",
+        "location": "Kolkata",
+        "level": 6,
+        "bio": "Avid reader and weekend trekker. Love book discussions and mountain getaways.",
+        "interests": ["Reading", "Trekking", "Travel"]
+      },
+      {
+        "name": "Arjun Roy",
+        "initials": "AR",
+        "location": "Howrah",
+        "level": 3,
+        "bio": "Football fan and event buff. Enjoys playing, watching matches and attending live events.",
+        "interests": ["Football", "Events"]
+      },
+      {
+        "name": "Nisha Kapoor",
+        "initials": "NK",
+        "location": "Kolkata",
+        "level": 7,
+        "bio": "Travel and photography enthusiast. Love exploring new destinations and capturing moments.",
+        "interests": ["Photography", "Travel", "Events"]
+      },
+      {
+        "name": "Kabir Bose",
+        "initials": "KB",
+        "location": "Kolkata",
+        "level": 4,
+        "bio": "Book lover and musician. Enjoys deep conversations, playlists and café meetups.",
+        "interests": ["Books", "Music"]
+      }
+    ]
+  }
+}
