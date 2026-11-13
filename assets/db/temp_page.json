@@ -104,6 +104,7 @@
     "featuredPost": {
       "author": "Arjun Sen",
       "initials": "AS",
+      "isMine": true,
       "guild": "Shadow Wolves",
       "time": "3h ago",
       "caption": "Just completed the Sandakphu trek! One of the most beautiful and challenging experiences so far. Highly recommend for all trek lovers here! 💜",
@@ -112,6 +113,42 @@
       "comments": 47,
       "shares": 18
     },
+    "posts": [
+      {
+        "author": "Arjun Sen",
+        "initials": "AS",
+        "isMine": true,
+        "guild": "Shadow Wolves",
+        "time": "3h ago",
+        "caption": "Just completed the Sandakphu trek! One of the most beautiful and challenging experiences so far. Highly recommend for all trek lovers here! 💜",
+        "tags": ["Travel Club", "Adventure Club", "Photography Club"],
+        "likes": 352,
+        "comments": 47,
+        "shares": 18
+      },
+      {
+        "author": "Priya Das",
+        "initials": "PD",
+        "guild": "Trek & Travel",
+        "time": "5h ago",
+        "caption": "A sunrise walk with good company is the best way to start the weekend.",
+        "tags": ["Trek & Travel", "Weekend"],
+        "likes": 128,
+        "comments": 16,
+        "shares": 7
+      },
+      {
+        "author": "Rohan Mehta",
+        "initials": "RM",
+        "guild": "Photography Club",
+        "time": "Yesterday",
+        "caption": "Sharing a few moments from our latest photo walk around the city.",
+        "tags": ["Photography Club", "Kolkata"],
+        "likes": 86,
+        "comments": 12,
+        "shares": 4
+      }
+    ],
     "guild": {
       "name": "Shadow Wolves",
       "id": "G-8F72D4",

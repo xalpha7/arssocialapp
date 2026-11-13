@@ -14,7 +14,7 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="/arssocialapp/">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -33,6 +33,85 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <script>
+    (() => {
+      const recoveryKey = 'ars-social-webgl-context-recovery';
+      const guardedCanvases = new WeakSet();
+      const addCanvasEventListener =
+        HTMLCanvasElement.prototype.addEventListener;
+
+      function showRecoveryDialog() {
+        if (document.getElementById('ars-webgl-recovery-dialog')) return;
+
+        const dialog = document.createElement('dialog');
+        dialog.id = 'ars-webgl-recovery-dialog';
+        dialog.setAttribute('aria-labelledby', 'ars-webgl-recovery-title');
+        dialog.style.cssText =
+          'max-width: 420px; border: 0; border-radius: 12px; padding: 24px; ' +
+          'box-shadow: 0 8px 32px #0004; font: 16px system-ui, sans-serif;';
+
+        const title = document.createElement('h2');
+        title.id = 'ars-webgl-recovery-title';
+        title.textContent = 'Graphics context lost';
+
+        const message = document.createElement('p');
+        message.textContent =
+          'The browser could not restore the graphics context. Reload ARS Social to continue.';
+
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = 'Reload page';
+        button.style.cssText =
+          'border: 0; border-radius: 6px; padding: 10px 16px; ' +
+          'background: #6725d5; color: white; cursor: pointer;';
+        button.addEventListener('click', () => window.location.reload());
+
+        dialog.append(title, message, button);
+        document.body.appendChild(dialog);
+        if (typeof dialog.showModal === 'function') {
+          dialog.showModal();
+        } else {
+          dialog.setAttribute('open', '');
+        }
+      }
+
+      HTMLCanvasElement.prototype.addEventListener = function (
+        type,
+        listener,
+        options,
+      ) {
+        if (type === 'webglcontextlost' && !guardedCanvases.has(this)) {
+          guardedCanvases.add(this);
+          addCanvasEventListener.call(
+            this,
+            type,
+            (event) => {
+              event.preventDefault();
+              event.stopImmediatePropagation();
+
+              let alreadyRecovered = false;
+              try {
+                alreadyRecovered = sessionStorage.getItem(recoveryKey) === '1';
+                sessionStorage.setItem(recoveryKey, '1');
+              } catch (_) {
+                showRecoveryDialog();
+                return;
+              }
+
+              if (alreadyRecovered) {
+                showRecoveryDialog();
+              } else {
+                window.setTimeout(() => window.location.reload(), 0);
+              }
+            },
+            true,
+          );
+        }
+
+        return addCanvasEventListener.call(this, type, listener, options);
+      };
+    })();
+  </script>
   <!--
     You can customize the "flutter_bootstrap.js" script.
     This is useful to provide a custom configuration to the Flutter loader
