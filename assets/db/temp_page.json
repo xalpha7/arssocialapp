@@ -26,10 +26,18 @@
       ]
     },
     {
-      "id": "find-partner",
-      "title": "Find a Partner",
-      "subtitle": "Meet people for activities and adventures",
+      "id": "connections",
+      "title": "Connections",
+      "subtitle": "Discover people and manage your connections",
       "icon": "partner",
+      "enabled": true,
+      "subFeatures": []
+    },
+    {
+      "id": "events",
+      "title": "Events",
+      "subtitle": "Browse partner requests and manage hosted events",
+      "icon": "events",
       "enabled": true,
       "subFeatures": [
         {"id": "create-event", "title": "Create an event", "enabled": true},
