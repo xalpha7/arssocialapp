@@ -45,15 +45,15 @@
       ]
     },
     {
-      "id": "guild",
-      "title": "Guild",
-      "subtitle": "Guild membership, rankings and challenges",
-      "icon": "guild",
+      "id": "clan",
+      "title": "Clan",
+      "subtitle": "Clan membership, rankings and challenges",
+      "icon": "clan",
       "enabled": true,
       "subFeatures": [
-        {"id": "guild-members", "title": "Guild members", "enabled": true},
-        {"id": "guild-challenges", "title": "Guild challenges", "enabled": true},
-        {"id": "guild-leaderboard", "title": "Guild leaderboard", "enabled": true}
+        {"id": "clan-members", "title": "Clan members", "enabled": true},
+        {"id": "clan-challenges", "title": "Clan challenges", "enabled": true},
+        {"id": "clan-leaderboard", "title": "Clan leaderboard", "enabled": true}
       ]
     },
     {
@@ -113,7 +113,7 @@
       "author": "Arjun Sen",
       "initials": "AS",
       "isMine": true,
-      "guild": "Shadow Wolves",
+      "clan": "Shadow Wolves",
       "time": "3h ago",
       "caption": "Just completed the Sandakphu trek! One of the most beautiful and challenging experiences so far. Highly recommend for all trek lovers here! 💜",
       "tags": ["Travel Club", "Adventure Club", "Photography Club"],
@@ -126,7 +126,7 @@
         "author": "Arjun Sen",
         "initials": "AS",
         "isMine": true,
-        "guild": "Shadow Wolves",
+        "clan": "Shadow Wolves",
         "time": "3h ago",
         "caption": "Just completed the Sandakphu trek! One of the most beautiful and challenging experiences so far. Highly recommend for all trek lovers here! 💜",
         "tags": ["Travel Club", "Adventure Club", "Photography Club"],
@@ -137,7 +137,7 @@
       {
         "author": "Priya Das",
         "initials": "PD",
-        "guild": "Trek & Travel",
+        "clan": "Trek & Travel",
         "time": "5h ago",
         "caption": "A sunrise walk with good company is the best way to start the weekend.",
         "tags": ["Trek & Travel", "Weekend"],
@@ -148,7 +148,7 @@
       {
         "author": "Rohan Mehta",
         "initials": "RM",
-        "guild": "Photography Club",
+        "clan": "Photography Club",
         "time": "Yesterday",
         "caption": "Sharing a few moments from our latest photo walk around the city.",
         "tags": ["Photography Club", "Kolkata"],
@@ -157,7 +157,7 @@
         "shares": 4
       }
     ],
-    "guild": {
+    "clan": {
       "name": "Shadow Wolves",
       "id": "G-8F72D4",
       "rank": "Gold V",
@@ -165,10 +165,10 @@
       "capacity": 50
     },
     "events": [
-      {"title": "Weddy Guild Challenge", "date": "Sat, 08 Nov · 6:00 PM", "icon": "trophy", "status": "Starting soon"},
+      {"title": "Weddy Clan Challenge", "date": "Sat, 08 Nov · 6:00 PM", "icon": "trophy", "status": "Starting soon"},
       {"title": "Guitar Club Jam Session", "date": "Sun, 09 Nov · 5:00 PM", "icon": "music", "status": "Upcoming"}
     ],
-    "trendingTopics": ["Kolkata Book Fair", "Winter Treks", "Inter-Guild Cup"],
+    "trendingTopics": ["Kolkata Book Fair", "Winter Treks", "Inter-Clan Cup"],
     "recommendations": [
       {"title": "Chess Club", "subtitle": "Strategy, games and discussions for chess enthusiasts.", "kind": "club", "initials": "♟"},
       {"title": "Sandakphu Trek", "subtitle": "Nov 15 – Nov 18 · Trek & Travel", "kind": "event", "initials": "ST"}
